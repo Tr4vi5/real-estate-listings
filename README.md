@@ -8,11 +8,11 @@ You job is to get this data onto the DOM. Use client side routing (`angular-rout
 
 ## Project Requirements
 
-- [ ] Create a Full Stack application from the ground up using Angular, Node, Express, and SQL (SEAN stack).
-- [ ] Work with the data set provided to you.
-- [ ] Account for the different data properties ("rent" versus "sale") and ensure that they only show up on the correct views.
-- [ ] 3 views, 3 angular routes, each with a controller and view file. See view/route details below.
-- [ ] Implement a `Card`, a common user interface element.
+- [x] Create a Full Stack application from the ground up using Angular, Node, Express, and SQL (SEAN stack).
+- [x] Work with the data set provided to you.
+- [x] Account for the different data properties ("rent" versus "sale") and ensure that they only show up on the correct views.
+- [x] 3 views, 3 angular routes, each with a controller and view file. See view/route details below.
+- [x] Implement a `Card`, a common user interface element.
  
 
 ## Importing the Provided Data File
@@ -30,23 +30,23 @@ Here is a mockup of a card-based layout for real estate listings. This is a guid
 ### Home/Add Listing View/Route
 
 - [x] Create a client-side route, controller, and view file for the home page.
-- [ ] Allow a user to add a property to the database on this view. You will need to give the user an option for either a Rental property or a Sale property.
-- [ ] Allow the user to enter the name of one of the images provided to display with the new listing. This only needs to be a text input.
+- [x] Allow a user to add a property to the database on this view. You will need to give the user an option for either a Rental property or a Sale property.
+- [x] Allow the user to enter the name of one of the images provided to display with the new listing. This only needs to be a text input.
 
 
 ### Rental Property View/Route
 
 - [x] Create a client-side route, controller, and view file for Rental properties.
 - [x] Display only those properties that are For Rent.
-- [ ] Display the listings in "card" elements, including the associated image. Images have been provided for you and assigned to each property.
-- [ ] Ability to delete an existing listing. Place a `delete` button on each listing card.
+- [x] Display the listings in "card" elements, including the associated image. Images have been provided for you and assigned to each property.
+- [x] Ability to delete an existing listing. Place a `delete` button on each listing card.
 
 ### Sale Property View/Route
 
 - [x] Create a client-side route, controller, and view file for Sale properties.
 - [x] Display only those properties that are For Sale.
-- [ ] Display the listings in "card" elements, including the associated image. Images have been provided for you and assigned to each property.
-- [ ] Ability to delete an existing property. Place a `delete` button on each property card.
+- [x] Display the listings in "card" elements, including the associated image. Images have been provided for you and assigned to each property.
+- [x] Ability to delete an existing property. Place a `delete` button on each property card.
 
 
 ## Dealing The Cards

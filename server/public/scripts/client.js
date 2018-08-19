@@ -34,12 +34,12 @@ myApp.controller('HomeController', function ($http) {
             url: '/listings',
             data: propertyToAdd
         }).then({
-            
+
         }).catch(function(error){
             alert('Sorry, can\'t add property');
             console.log('Error in addProperty POST', error);
         })
-    }
+    }//end addProperty function
 })//end HomeController
 
 myApp.controller('SalesController', function ($http) {
@@ -64,7 +64,15 @@ myApp.controller('SalesController', function ($http) {
 
     vm.removeSale = function(id){
         console.log('in removeSale', id);
-        
+        $http({
+            method: 'DELETE',
+            url: '/listings/delete/' + id
+        }).then(function (response) {
+            vm.getSales();
+        }).catch(function (error) {
+            alert('Could not remove listing');
+            console.log('Error in removeSale', error);
+        })
     }//end removeSale function
 })//end SalesController
 
@@ -89,6 +97,14 @@ myApp.controller('RentalController', function ($http) {
 
     vm.removeRental = function (id) {
         console.log('in removeRental', id);
-
+        $http({
+            method: 'DELETE',
+            url: '/listings/delete/' + id
+        }).then(function(response){
+            vm.getRentals();
+        }).catch(function(error){
+            alert('Could not remove listing');
+            console.log('Error in removeRental', error);
+        })
     }//end removeRental function
 })//end RentalController

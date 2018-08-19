@@ -57,6 +57,19 @@ router.post('/', (req,res)=>{
         console.log('Error in router POST', error);
         res.sendStatus(500);
     })
-})
+}) // end listings post
+
+router.delete('/delete/:id', (req,res)=>{
+    console.log(req.params.id);
+    const idToDelete = req.params.id;
+    const query = `DELETE FROM "listings" WHERE "id" = $1;`;
+    pool.query(query, [idToDelete]).then((result)=>{
+        res.sendStatus(200);
+    }).catch((error)=>{
+        console.log('Error in router DELETE', error);
+        
+        res.sendStatus(500);
+    })
+})// end delete query
 
 module.exports = router;
