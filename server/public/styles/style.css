@@ -11,6 +11,9 @@ h2{
     background-color: cornflowerblue;
     color:white;
 }
+.selectBox{
+    height:30px;
+}
 .view{
     background-color: white;
 }
@@ -21,6 +24,6 @@ h2{
 }
 #inForm{
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: white;
     height: 100vh;
 }
