@@ -13,14 +13,34 @@ myApp.config(function ($routeProvider) {
     }).otherwise({
         templateUrl: 'views/404.html'
     });
-});
+});//end config
 
 myApp.controller('HomeController', function ($http) {
     const vm = this;
     console.log('in Home controller');
 
+    vm.addProperty = function(){
+        let propertyToAdd = {
+            cost: vm.cost,
+            sqft: vm.sqft,
+            type: vm.type,
+            city: vm.city,
+            image_path: vm.image_path
+        }
+        console.log(propertyToAdd);
 
-})
+        $http({
+            method: 'POST',
+            url: '/listings',
+            data: propertyToAdd
+        }).then({
+            
+        }).catch(function(error){
+            alert('Sorry, can\'t add property');
+            console.log('Error in addProperty POST', error);
+        })
+    }
+})//end HomeController
 
 myApp.controller('SalesController', function ($http) {
     const vm = this;
@@ -39,9 +59,14 @@ myApp.controller('SalesController', function ($http) {
             alert('Error')
             console.log('Error in GET', error);
         })
-    }
+    }// end getSales function
     vm.getSales();
-})
+
+    vm.removeSale = function(id){
+        console.log('in removeSale', id);
+        
+    }//end removeSale function
+})//end SalesController
 
 myApp.controller('RentalController', function ($http) {
     const vm = this;
@@ -59,6 +84,11 @@ myApp.controller('RentalController', function ($http) {
             alert('Error')
             console.log('Error in GET', error);
         })
-    }
+    }// end getRentals function
     vm.getRentals();
-})
+
+    vm.removeRental = function (id) {
+        console.log('in removeRental', id);
+
+    }//end removeRental function
+})//end RentalController
