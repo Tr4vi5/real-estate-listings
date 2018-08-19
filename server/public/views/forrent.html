@@ -1,10 +1,11 @@
-<h2>Here are all the properties for rent:</h2>
-
-<div class="card" ng-repeat="property in rc.allRentals">
-    <img class="card-img-top" ng-src="/images/{{property.image_path}}" alt="House for Rent">
-    <div class="card-body">
-        <h5 class="card-title">Rent: ${{property.cost}}</h5>
-        <p class="card-text">Square footage: {{property.sqft}}</p>
-        <button class="btn btn-alert" ng-click="rc.removeRental(property.id)">Delete</button>
+<div class="view">
+    <h2>Here are all the properties for rent:</h2>
+    <div class="card" ng-repeat="property in rc.allRentals">
+        <img class="card-img-top" ng-src="/images/{{property.image_path}}" width="220" height="135" alt="House for Rent">
+        <div class="card-body">
+            <h5 class="card-title">Rent: ${{property.cost}}</h5>
+            <p class="card-text">Square footage: {{property.sqft}}</p>
+            <button class="btn btn-danger" ng-click="rc.removeRental(property.id)">Delete</button>
+        </div>
     </div>
 </div>

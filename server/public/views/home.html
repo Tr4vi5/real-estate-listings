@@ -1,9 +1,11 @@
-<h3>Welcome Home</h3>
-<form ng-submit="hc.addProperty()">
-    <input type="float" placeholder="Cost" ng-model="hc.cost">
-    <input type="float" placeholder="Square Footage" ng-model="hc.sqft">
-    <input type="text" placeholder="Type (Sale or Rent)" ng-model="hc.type">
-    <input type="text" placeholder="City" ng-model="hc.city">
-    <input type="text" placeholder="Image" ng-model="hc.image_path">
-    <input type="submit" value="Add Property">
-</form>
+<div id="inForm">
+    <h3>Welcome Home</h3>
+    <form ng-submit="hc.addProperty()">
+        <input type="float" placeholder="Cost" ng-model="hc.cost">
+        <input type="float" placeholder="Square Footage" ng-model="hc.sqft">
+        <input type="text" placeholder="Type (Sale or Rent)" ng-model="hc.type">
+        <input type="text" placeholder="City" ng-model="hc.city">
+        <input type="text" placeholder="Image" ng-model="hc.image_path">
+        <input type="submit" value="Add Property">
+    </form>
+</div>
