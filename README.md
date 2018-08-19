@@ -29,7 +29,7 @@ Here is a mockup of a card-based layout for real estate listings. This is a guid
 
 ### Home/Add Listing View/Route
 
-- [ ] Create a client-side route, controller, and view file for the home page.
+- [x] Create a client-side route, controller, and view file for the home page.
 - [ ] Allow a user to add a property to the database on this view. You will need to give the user an option for either a Rental property or a Sale property.
 - [ ] Allow the user to enter the name of one of the images provided to display with the new listing. This only needs to be a text input.
 

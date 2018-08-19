@@ -1,0 +1,9 @@
+<h2>Here are all the properties for sale:</h2>
+
+<div class="card" ng-repeat="property in sc.allSales">
+    <img class="card-img-top" ng-src="{{image_path}}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{property.cost}}</h5>
+        <p class="card-text">{{property.sqft}}</p>
+        <button class="btn btn-alert">Delete</a>
+</div>
