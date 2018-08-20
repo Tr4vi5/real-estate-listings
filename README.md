@@ -13,9 +13,9 @@ This project is a utility app for a real-estate agency which allows the user(s) 
 ## Views and Layout
 Here are screenshots of the three different angular.js views.
 
-![Screenshot one of project](https://i.imgur.com/lnneNB7.png)
-![Screenshot two of project](https://i.imgur.com/8LHvdlS.png)
-![Screenshot three of project](https://i.imgur.com/6dgR7Ao.png)
+![Screenshot one of project](https://i.imgur.com/zQTF8dJ.png)
+![Screenshot two of project](https://i.imgur.com/aAoH5Ne.png)
+![Screenshot three of project](https://i.imgur.com/5sF0MRx.png)
 
 
 # To-Do List
