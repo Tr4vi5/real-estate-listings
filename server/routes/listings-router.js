@@ -20,6 +20,8 @@ pool.on('error', (error)=>{
     console.log('Error connecting to SQL database', error);
     
 });
+
+const pool = require('../modules/pool.js');
 //routes
 router.get('/forsale', (req,res)=>{
     console.log('in GET route');
@@ -48,7 +50,12 @@ router.get('/forrent', (req, res) => {
 // router.get('/cheaprental', (req,res)=>{
 //     const query = `SELECT * FROM "listings" WHERE "type" ILIKE 'rent' ORDER BY "cost" ASC LIMIT 1;`;
 //     pool.query(query).then((results)=>{
-//         res.send(results.rows);
+//         // check array length
+//         console.log(results.rows.length);
+        
+//         // if (results.rows.length > 1){
+//         //     res.send(results.rows[0]);
+//         // }
 //     }).catch((error)=>{
 //         console.log('Error getting cheapest rental from database', error);
 //         res.sendStatus(500);

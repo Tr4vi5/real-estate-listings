@@ -34,7 +34,7 @@ myApp.controller('RentalController', function ($http) {
         })
     }//end removeRental function
 
-     // vm.getCheapest = function () {
+    //  vm.getCheapest = function () {
     //     vm.cheapestRental = {};
     //     $http({
     //         method: 'GET',
