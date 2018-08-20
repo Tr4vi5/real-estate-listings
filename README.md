@@ -18,7 +18,7 @@ Here are screenshots of the three different angular.js views.
 ![Screenshot three of project](https://i.imgur.com/6dgR7Ao.png)
 
 
-## To-Do List
+# To-Do List
 ### Home/Add Listing View/Route
 
 - [x] Create a client-side route, controller, and view file for the home page.

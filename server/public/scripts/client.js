@@ -33,8 +33,12 @@ myApp.controller('HomeController', function ($http) {
             method: 'POST',
             url: '/listings',
             data: propertyToAdd
-        }).then({
-
+        }).then(function(){
+            vm.cost='';
+            vm.sqft='';
+            vm.type='';
+            vm.city='';
+            vm.image_path='';
         }).catch(function(error){
             alert('Sorry, can\'t add property');
             console.log('Error in addProperty POST', error);

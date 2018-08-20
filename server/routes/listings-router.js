@@ -20,7 +20,7 @@ pool.on('error', (error)=>{
     console.log('Error connecting to SQL database', error);
     
 });
-
+//routes
 router.get('/forsale', (req,res)=>{
     console.log('in GET route');
     const query = `SELECT * FROM "listings" WHERE "type" ILIKE 'sale' ;`;
