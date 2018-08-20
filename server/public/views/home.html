@@ -1,15 +1,15 @@
 <div id="inForm">
     <h3>Enter a new listing</h3>
     <form ng-submit="hc.addProperty()">
-        <input type="float" placeholder="Cost" ng-model="hc.cost">
-        <input type="float" placeholder="Square Footage" ng-model="hc.sqft">
-        <input type="text" placeholder="City" ng-model="hc.city">
-        <select class="selectBox" ng-model="hc.type" name="type">
+        <input type="float" placeholder="Cost" ng-model="hc.cost" required>
+        <input type="float" placeholder="Square Footage" ng-model="hc.sqft" required>
+        <input type="text" placeholder="City" ng-model="hc.city" required>
+        <select class="selectBox" ng-model="hc.type" name="type" required>
             <option value="" disabled selected>Choose Type</option>
             <option value="rent">Rent</option>
             <option value="sale">Sale</option>
         </select>
-        <select class="selectBox" ng-model="hc.image_path" name="image">
+        <select class="selectBox" ng-model="hc.image_path" name="image" required>
             <option value="" disabled selected>Choose Image</option>
             <option value="classic-flats.jpg">Classic Flats</option>
             <option value="rental.jpg">Rental</option>

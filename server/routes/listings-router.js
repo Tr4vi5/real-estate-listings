@@ -45,6 +45,16 @@ router.get('/forrent', (req, res) => {
     });
 })//end rent get
 
+// router.get('/cheaprental', (req,res)=>{
+//     const query = `SELECT * FROM "listings" WHERE "type" ILIKE 'rent' ORDER BY "cost" ASC LIMIT 1;`;
+//     pool.query(query).then((results)=>{
+//         res.send(results.rows);
+//     }).catch((error)=>{
+//         console.log('Error getting cheapest rental from database', error);
+//         res.sendStatus(500);
+//     })
+// })
+
 router.post('/', (req,res)=>{
     console.log('in POST route', req.body);
     let listing = req.body;
